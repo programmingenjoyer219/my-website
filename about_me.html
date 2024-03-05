@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+<style>
+    .header {
+        background: linear-gradient(-45deg, #06283D, #0d479e);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+    .container > header ul li a {
+        color: #bec3c9;
+        font-family: "Chivo", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    .container-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin: 0 auto;
+        max-width: 800px; /* Adjust max-width for larger screens */
+        padding: 0 20px;
+    }
+
+    .para_one {
+        padding: 16px;
+        box-shadow: 5px 5px 5px 5px #0d479e;
+        border-radius: 5px;
+        background: linear-gradient(-45deg, #06283D, #0d479e);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+
+    .para_one > p {
+        color: #bec3c9;
+        font-weight: 500;
+        font-family: "Quicksand", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
+    .collage > img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 5px 5px 5px 5px #0d479e;
+        border-radius: 5px;
+        margin-bottom: 25px;
+    }
+
+    .container > header ul li a:hover, .hero .nav-link:hover {
+        color: #fff;
+    }
+
+    .transition-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #06283D;
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
+
+    .transition-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+</style>
+</head>
+
+<body>
+<!-- transition overlay -->
+<div class="transition-overlay"></div>
+<!--        -->
+
+<!-- header -->
+<div class="container header">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./assets/logoelephant.svg" alt="my logo" height="50">
+        </a>
+
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="./about_me.html" class="nav-link">About me</a></li>
+            <li class="nav-item"><a href="./project.html" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="./contact.html" class="nav-link">Contact me</a></li>
+        </ul>
+    </header>
+</div>
+<!--  -->
+
+<div class="container-2">
+    <div class="para_one">
+        <p>
+            <img src="./assets/waving-hand-svgrepo-com.svg" alt="hand wave emoji" height="20px"> <img src="./assets/smile-svgrepo-com.svg" alt="smile emoji" height="20px"> Hey there! How's it going? I'm Yuganshu, a 19-year-old guy who's diving headfirst into the exciting world of programming. Started off with C language a while back and then found my groove with <img src="./assets/language-python-svgrepo-com.svg" alt="python icon", height="20px">, churning out about 50 projects along the way. While I've been busy coding, I've also been dabbling in <img src="./assets/programmer-svgrepo-com.svg" alt="html file emoji" height="20px"> web development, even whipped up a cool website as one of my projects. Oh, and <img src="./assets/sql-database-generic-svgrepo-com.svg" alt="databse emoji" height="20px"> MySQL? Yep, got that under my belt too. Recently, I've been trying my hand at <img src="./assets/ui-china-svgrepo-com.svg" alt="UI emoji" height="20px"> design, which has been a blast. And you know what? I've got a soft spot for <img src="./assets/axis-mathematics-svgrepo-com.svg" alt="Maths emoji" height="20px"> Mathematics, can't get enough of it!
+        </p>
+        <p>
+            But hey, life's not all about coding and numbers, right? I'm a huge fan of <img src="./assets/badminton-svgrepo-com.svg" alt="shuttle cock emoji" height="20px"> and <img src="./assets/football-svgrepo-com.svg" alt="football emoji" height="20px"> - love getting out and getting active. And when it's time to wind down, you'll probably find me immersed in manga and anime, or maybe getting my heart racing with a good <img src="./assets/entertainment-svgrepo-com.svg" alt="popcorn emoji" height="20px"> horror flick. Nat Geo documentaries at midnight? You bet I'm tuned in! And let's not forget the chill vibes of Lo-Fi <img src="./assets/music-svgrepo-com.svg" alt="music emoji" height="20px"> that keep me going while I hit the books. Oh, and did I mention I love to draw? Been at it since I was knee-high.
+        </p>
+        <p>
+            So, that's a little peek into my world - a mix of coding adventures, sports passion, and creative pursuits. I'm all about spreading good vibes and sharing what I <img src="./assets/heart-svgrepo-com.svg" alt="hear emoji" height="20px">, so come on in and take a look around! <img src="./assets/smile-emoji-emoticon-feeling-face-happy-cheerful-svgrepo-com.svg" alt="smile emoji" height="30px">
+        </p>
+    </div>
+    
+    <div class="collage">
+        <img src="./assets/collage.png" alt="collage of drawings"> 
+    </div>  
+</div>
+
+<!--      -->
+
+<script>
+// Add smooth transition effect when navigating between pages
+document.querySelectorAll('a[href]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const href = this.getAttribute('href');
+        const overlay = document.querySelector('.transition-overlay');
+        
+        overlay.classList.add('active');
+
+        setTimeout(() => {
+            window.location.href = href;
+        }, 500); // Adjust the delay as needed for your transition
+    });
+});
+
+// Fade in content when page is loaded
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll('.para_one, .container > header ul li a, .collage > img').forEach(element => {
+        element.style.opacity = 5;
+    });
+});
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

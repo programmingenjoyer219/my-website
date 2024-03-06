@@ -58,24 +58,6 @@
                 font-style: normal;
             }
 
-            .transition-overlay {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: #06283D;
-                z-index: 1000;
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.3s ease;
-            }
-
-            .transition-overlay.active {
-                opacity: 1;
-                pointer-events: auto;
-            }
-
             @media (max-width: 425px) {
                 .lead.mb-4 {
                     font-size: 0.75rem;
@@ -90,10 +72,6 @@
     </head>
 
     <body>
-        <!-- transition overlay -->
-        <div class="transition-overlay"></div>
-        <!--        -->
-
         <!-- header -->
         <div class="container header">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -130,22 +108,6 @@
         <!--      -->
 
         <script>
-            // Add smooth transition effect when navigating between pages
-            document.querySelectorAll('a[href]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-
-                    const href = this.getAttribute('href');
-                    const overlay = document.querySelector('.transition-overlay');
-                    
-                    overlay.classList.add('active');
-
-                    setTimeout(() => {
-                        window.location.href = href;
-                    }, 500); // Adjust the delay as needed for your transition
-                });
-            });
-
             // Fade in content when page is loaded
             document.addEventListener("DOMContentLoaded", function() {
                 document.querySelectorAll('h1, .container > header ul li a, .hero .nav-link, .hero p').forEach(element => {
